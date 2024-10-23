@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Models\\DotNetWeb.Models.csproj",
+      "projectUniqueName": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Models\\DotNetWeb.Models.csproj",
       "projectName": "DotNetWeb.Models",
-      "projectPath": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Models\\DotNetWeb.Models.csproj",
+      "projectPath": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Models\\DotNetWeb.Models.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Models\\obj\\",
+      "outputPath": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Models\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.DataAccess\\DotNetWeb.DataAccess.csproj": {}
+    "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.DataAccess\\DotNetWeb.DataAccess.csproj": {}
   },
   "projects": {
-    "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.DataAccess\\DotNetWeb.DataAccess.csproj": {
+    "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.DataAccess\\DotNetWeb.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.DataAccess\\DotNetWeb.DataAccess.csproj",
+        "projectUniqueName": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.DataAccess\\DotNetWeb.DataAccess.csproj",
         "projectName": "DotNetWeb.DataAccess",
-        "projectPath": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.DataAccess\\DotNetWeb.DataAccess.csproj",
+        "projectPath": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.DataAccess\\DotNetWeb.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.DataAccess\\obj\\",
+        "outputPath": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,11 +29,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Models\\DotNetWeb.Models.csproj": {
-                "projectPath": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Models\\DotNetWeb.Models.csproj"
+              "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Models\\DotNetWeb.Models.csproj": {
+                "projectPath": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Models\\DotNetWeb.Models.csproj"
               },
-              "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj": {
-                "projectPath": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj"
+              "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj": {
+                "projectPath": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Models\\DotNetWeb.Models.csproj": {
+    "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Models\\DotNetWeb.Models.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Models\\DotNetWeb.Models.csproj",
+        "projectUniqueName": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Models\\DotNetWeb.Models.csproj",
         "projectName": "DotNetWeb.Models",
-        "projectPath": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Models\\DotNetWeb.Models.csproj",
+        "projectPath": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Models\\DotNetWeb.Models.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Models\\obj\\",
+        "outputPath": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Models\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -149,14 +149,14 @@
         }
       }
     },
-    "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj": {
+    "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj",
+        "projectUniqueName": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj",
         "projectName": "DotNetWeb.Utility",
-        "projectPath": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj",
+        "projectPath": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Utility\\obj\\",
+        "outputPath": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",

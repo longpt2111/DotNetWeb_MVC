@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj": {}
+    "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj": {}
   },
   "projects": {
-    "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj": {
+    "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj",
+        "projectUniqueName": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj",
         "projectName": "DotNetWeb.Utility",
-        "projectPath": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj",
+        "projectPath": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Utility\\DotNetWeb.Utility.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "D:\\IT\\Workspaces\\C#\\DotNetWebsite\\DotNetWeb.Utility\\obj\\",
+        "outputPath": "D:\\IT\\Workspaces\\C#\\DotNetWeb_MVC\\DotNetWeb.Utility\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
