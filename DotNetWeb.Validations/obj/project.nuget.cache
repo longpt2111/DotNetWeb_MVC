@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "8yh3JPz5Houyy/RH8oGhKTCvL0WhsrzgRqPNhy4lFrC2Ta+AJbCiLxbmzpw7c4F9bky7RmoqLTkh34JW8B9iTg==",
+  "success": false,
+  "projectFilePath": "D:\\IT\\Workspaces\\C#\\DotNetWeb.Validations\\DotNetWeb.Validations.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1108",
+      "level": "Error",
+      "message": "Cycle detected. \r\n  DotNetWeb.Validations -> DotNetWeb.Models -> DotNetWeb.Validations.",
+      "libraryId": "DotNetWeb.Validations",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}

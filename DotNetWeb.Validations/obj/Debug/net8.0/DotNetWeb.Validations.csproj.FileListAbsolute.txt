@@ -1,0 +1,4 @@
+D:\IT\Workspaces\C#\DotNetWeb.Validations\obj\Debug\net8.0\DotNetWeb.Validations.GeneratedMSBuildEditorConfig.editorconfig
+D:\IT\Workspaces\C#\DotNetWeb.Validations\obj\Debug\net8.0\DotNetWeb.Validations.AssemblyInfoInputs.cache
+D:\IT\Workspaces\C#\DotNetWeb.Validations\obj\Debug\net8.0\DotNetWeb.Validations.AssemblyInfo.cs
+D:\IT\Workspaces\C#\DotNetWeb.Validations\obj\Debug\net8.0\DotNetWeb.Validations.csproj.CoreCompileInputs.cache
