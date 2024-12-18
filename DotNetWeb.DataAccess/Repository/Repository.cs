@@ -28,7 +28,7 @@ namespace DotNetWeb.DataAccess.Repository
             return query.FirstOrDefault();
         }
 
-        public IEnumerable<T> GetAll()
+        public List<T> GetAll()
         {
             IQueryable<T> query = dbSet;
             return query.ToList();

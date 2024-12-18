@@ -7,7 +7,7 @@
 namespace DotNetWeb.DataAccess.Migrations
 {
     /// <inheritdoc />
-    public partial class AddAndSeedCategoryToDb : Migration
+    public partial class AddCategoryToDbAndSeedTable : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

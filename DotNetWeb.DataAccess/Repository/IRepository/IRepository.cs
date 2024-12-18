@@ -4,7 +4,7 @@ namespace DotNetWeb.DataAccess.Repository.IRepository
 {
     public interface IRepository<T> where T : class
     {
-        IEnumerable<T> GetAll();
+        List<T> GetAll();
         T? Get(Expression<Func<T, bool>> filter);
         void Add(T entity);
         void Remove(T entity);
