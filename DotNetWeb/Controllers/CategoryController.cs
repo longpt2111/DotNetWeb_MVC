@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace DotNetWeb.Controllers
 {
-    public class CategoryController(ICategoryRepository categoryRepo) : Controller
+    public class CategoryController(IUnitOfWork unitOfWork) : Controller
     {
-        private readonly ICategoryRepository _categoryRepo = categoryRepo;
+        private readonly IUnitOfWork _unitOfWork = unitOfWork;
         public IActionResult Index()
         {
-            List<Category> categoryList = _categoryRepo.GetAll();
+            List<Category> categoryList = _unitOfWork.Category.GetAll();
             return View(categoryList);
         }
 
@@ -28,8 +28,8 @@ namespace DotNetWeb.Controllers
 
             if (ModelState.IsValid)
             {
-                _categoryRepo.Add(obj);
-                _categoryRepo.Save();
+                _unitOfWork.Category.Add(obj);
+                _unitOfWork.Save();
                 TempData["successMessage"] = "Category created successfully";
                 return RedirectToAction("Index");
             }
@@ -43,7 +43,7 @@ namespace DotNetWeb.Controllers
                 return NotFound();
             }
 
-            Category? categoryFromDb = _categoryRepo.Get(u => u.Id == id);
+            Category? categoryFromDb = _unitOfWork.Category.Get(u => u.Id == id);
             if (categoryFromDb == null)
             {
                 return NotFound();
@@ -56,8 +56,8 @@ namespace DotNetWeb.Controllers
         {
             if (ModelState.IsValid)
             {
-                _categoryRepo.Update(obj);
-                _categoryRepo.Save();
+                _unitOfWork.Category.Update(obj);
+                _unitOfWork.Save();
                 TempData["successMessage"] = "Category updated successfully";
                 return RedirectToAction("Index");
             }
@@ -67,13 +67,13 @@ namespace DotNetWeb.Controllers
         [HttpPost]
         public IActionResult Delete(int? id)
         {
-            Category? category = _categoryRepo.Get(u => u.Id == id);
+            Category? category = _unitOfWork.Category.Get(u => u.Id == id);
             if (category == null)
             {
                 return NotFound();
             }
-            _categoryRepo.Remove(category);
-            _categoryRepo.Save();
+            _unitOfWork.Category.Remove(category);
+            _unitOfWork.Save();
             TempData["successMessage"] = "Category deleted successfully";
             return RedirectToAction("Index");
         }
