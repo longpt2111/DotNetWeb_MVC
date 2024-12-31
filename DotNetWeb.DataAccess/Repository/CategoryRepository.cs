@@ -16,5 +16,10 @@ namespace DotNetWeb.DataAccess.Repository
         {
             _db.Categories.Update(category);
         }
+
+        public void Save()
+        {
+            _db.SaveChanges();
+        }
     }
 }
