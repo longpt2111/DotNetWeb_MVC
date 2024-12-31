@@ -2,7 +2,7 @@
 using DotNetWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 
-namespace DotNetWeb.Controllers
+namespace DotNetWeb.Areas.Admin.Controllers
 {
     public class CategoryController(IUnitOfWork unitOfWork) : Controller
     {

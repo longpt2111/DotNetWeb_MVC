@@ -2,7 +2,7 @@ using DotNetWeb.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace DotNetWeb.Controllers
+namespace DotNetWeb.Areas.Customer.Controllers
 {
     public class HomeController(ILogger<HomeController> logger) : Controller
     {

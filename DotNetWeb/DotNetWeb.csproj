@@ -14,6 +14,7 @@
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
 		<ProjectReference Include="..\DotNetWeb.Models\DotNetWeb.Models.csproj" />
 		<ProjectReference Include="..\DotNetWeb.Utility\DotNetWeb.Utility.csproj" />
 		<ProjectReference Include="..\DotNetWeb.DataAccess\DotNetWeb.DataAccess.csproj" />
