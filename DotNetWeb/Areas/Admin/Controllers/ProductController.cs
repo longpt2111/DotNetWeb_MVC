@@ -5,13 +5,13 @@ using Microsoft.AspNetCore.Mvc;
 namespace DotNetWeb.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    public class CategoryController(IUnitOfWork unitOfWork) : Controller
+    public class ProductController(IUnitOfWork unitOfWork) : Controller
     {
         private readonly IUnitOfWork _unitOfWork = unitOfWork;
         public IActionResult Index()
         {
-            List<Category> categoryList = _unitOfWork.Category.GetAll();
-            return View(categoryList);
+            List<Product> productList = _unitOfWork.Product.GetAll();
+            return View(productList);
         }
 
         public IActionResult Create()
@@ -20,18 +20,13 @@ namespace DotNetWeb.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Category obj)
+        public IActionResult Create(Product obj)
         {
-            if (obj.Name == obj.DisplayOrder.ToString())
-            {
-                ModelState.AddModelError("name", "The DisplayOrder cannot exactly match the Name.");
-            }
-
             if (ModelState.IsValid)
             {
-                _unitOfWork.Category.Add(obj);
+                _unitOfWork.Product.Add(obj);
                 _unitOfWork.Save();
-                TempData["successMessage"] = "Category created successfully";
+                TempData["successMessage"] = "Product created successfully";
                 return RedirectToAction("Index");
             }
             return View();
@@ -44,22 +39,22 @@ namespace DotNetWeb.Areas.Admin.Controllers
                 return NotFound();
             }
 
-            Category? categoryFromDb = _unitOfWork.Category.Get(u => u.Id == id);
-            if (categoryFromDb == null)
+            Product? ProductFromDB = _unitOfWork.Product.Get(u => u.Id == id);
+            if (ProductFromDB == null)
             {
                 return NotFound();
             }
-            return View(categoryFromDb);
+            return View(ProductFromDB);
         }
 
         [HttpPost]
-        public IActionResult Edit(Category obj)
+        public IActionResult Edit(Product obj)
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Category.Update(obj);
+                _unitOfWork.Product.Update(obj);
                 _unitOfWork.Save();
-                TempData["successMessage"] = "Category updated successfully";
+                TempData["successMessage"] = "Product updated successfully";
                 return RedirectToAction("Index");
             }
             return View();
@@ -68,14 +63,14 @@ namespace DotNetWeb.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Delete(int? id)
         {
-            Category? category = _unitOfWork.Category.Get(u => u.Id == id);
-            if (category == null)
+            Product? product = _unitOfWork.Product.Get(u => u.Id == id);
+            if (product == null)
             {
                 return NotFound();
             }
-            _unitOfWork.Category.Remove(category);
+            _unitOfWork.Product.Remove(product);
             _unitOfWork.Save();
-            TempData["successMessage"] = "Category deleted successfully";
+            TempData["successMessage"] = "Product deleted successfully";
             return RedirectToAction("Index");
         }
     }
