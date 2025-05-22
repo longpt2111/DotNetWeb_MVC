@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DotNetWeb.Models
@@ -9,41 +10,43 @@ namespace DotNetWeb.Models
     public int Id { get; set; }
 
     [Required]
-    public required string Title { get; set; }
+    public string Title { get; set; }
 
     public string? Description { get; set; }
 
     [Required]
-    public required string Author { get; set; }
+    public string Author { get; set; }
 
     [Required]
-    public required string ISBN { get; set; }
+    public string ISBN { get; set; }
 
     [Required]
     [Display(Name = "List Price")]
     [Range(1, 1000)]
-    public required double ListPrice { get; set; }
+    public double ListPrice { get; set; }
 
     [Required]
     [Display(Name = "Price for 1-50")]
     [Range(1, 1000)]
-    public required double Price { get; set; }
+    public double Price { get; set; }
 
     [Required]
     [Display(Name = "Price for 50+")]
     [Range(1, 1000)]
-    public required double Price50 { get; set; }
+    public double Price50 { get; set; }
 
     [Required]
     [Display(Name = "Price for 100+")]
     [Range(1, 1000)]
-    public required double Price100 { get; set; }
+    public double Price100 { get; set; }
 
     public int CategoryId { get; set; }
 
     [ForeignKey("CategoryId")]
+    [ValidateNever]
     public Category Category { get; set; }
 
-    public string ImageUrl { get; set; }
+    [ValidateNever]
+    public List<ProductImage> ProductImages { get; set; }
   }
 }

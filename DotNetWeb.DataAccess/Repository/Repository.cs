@@ -16,22 +16,38 @@ namespace DotNetWeb.DataAccess.Repository
       dbSet = _db.Set<T>();
     }
 
+    private IQueryable<T> ApplyIncludeProperties(IQueryable<T> query, string? includeProperties)
+    {
+      if (!string.IsNullOrEmpty(includeProperties))
+      {
+        foreach (var includeProp in includeProperties.Split(',', StringSplitOptions.RemoveEmptyEntries))
+        {
+          query = query.Include(includeProp);
+        }
+      }
+      return query;
+    }
+
     public void Add(T entity)
     {
       dbSet.Add(entity);
     }
 
-    public T? Get(Expression<Func<T, bool>> filter)
+    public T? Get(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = false)
     {
-      IQueryable<T> query = dbSet;
+      IQueryable<T> query = tracked ? dbSet : dbSet.AsNoTracking();
       query = query.Where(filter);
-      return query.FirstOrDefault();
+      return ApplyIncludeProperties(query, includeProperties).FirstOrDefault();
     }
 
-    public List<T> GetAll()
+    public List<T> GetAll(Expression<Func<T, bool>>? filter = null, string? includeProperties = null)
     {
       IQueryable<T> query = dbSet;
-      return query.ToList();
+      if (filter is not null)
+      {
+        query = query.Where(filter);
+      }
+      return ApplyIncludeProperties(query, includeProperties).ToList();
     }
 
     public void Remove(T entity)

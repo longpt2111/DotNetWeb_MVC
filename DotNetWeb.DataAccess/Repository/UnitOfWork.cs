@@ -8,11 +8,13 @@ namespace DotNetWeb.DataAccess.Repository
     private readonly ApplicationDbContext _db;
     public ICategoryRepository Category { get; private set; }
     public IProductRepository Product { get; private set; }
+    public IProductImageRepository ProductImage { get; private set; }
     public UnitOfWork(ApplicationDbContext db)
     {
       _db = db;
       Category = new CategoryRepository(db);
       Product = new ProductRepository(db);
+      ProductImage = new ProductImageRepository(db);
     }
 
     public void Save()

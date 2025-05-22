@@ -12,11 +12,11 @@ namespace DotNetWeb.Models
     [DisplayName("Category Name")]
     [MaxLength(30)]
     [UniqueCategoryName]
-    public required string Name { get; set; }
+    public string Name { get; set; }
 
     [Required]
     [DisplayName("Display Order")]
     [Range(1, 100)]
-    public required int DisplayOrder { get; set; }
+    public int DisplayOrder { get; set; }
   }
 }
